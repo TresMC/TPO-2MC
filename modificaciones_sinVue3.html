@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Producto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e3ba4cd104.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/estiloIndex.css">
+</head>
+
+<body>
+
+    <header class="encabezado" id="inicio">
+
+        <div class="contenido-navegacion">
+    
+          <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="active">2<span>MC</span></a>
+            <a href="altas.html">Alta de productos</a>
+            <a href="listado.html">Listado de productos</a>
+            <a href="modificaciones_sinVue3.html">Modificar datos de productos</a>
+            <a href="listadoEliminar.html">Eliminar productos</a>
+            <a href="carrito1.html">Carrito de compras</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i> </a>
+          </nav>
+          <div>
+            <div class="img">
+              <img src="img/logo_codo.png" alt="codoacodo" width="100px">
+            </div>
+          </div>
+        </div> 
+
+        <section>
+            <div class="div-lista">
+                <h1>Modificar Productos del Inventario</h1>
+              </div>
+            
+            <form id="formulario" class="formmodificar">
+                <label for="codigo">Código:</label>
+                <input type="text" id="codigo" name="codigo" required><br>
+                <button type="submit">Modificar Producto</button> 
+                <a href="ListadoCodigo.html">Lista de Codigos</a>
+                <a href="index.html">Menu principal</a>
+            </form>
+        
+            <div id="datosProducto" style="display: none;">
+                <h2>Datos del Producto</h2>
+                <form id="formularioModificar">
+                    <label for="descripcionModificar">Descripción Gral.:</label>
+                    <input type="text" id="descripcionModificar" name="descripcionModificar" required><br>
+        
+                    <label for="valorModificar">Esp. Técnica:</label>
+                    <input type="text" id="valorModificar" name="valorModificar" required><br>
+        
+                    <label for="cantidadModificar">Cantidad:</label>
+                    <input type="number" id="cantidadModificar" name="cantidadModificar" required><br>
+        
+                    <label for="precioModificar">Precio Unitario $:</label>
+                    <input type="number" step="0.01" id="precioModificar" name="precioModificar" required><br>
+        
+                    <button type="submit">Guardar Cambios</button>
+                    <a href="modificaciones_sinVue3.html">Cancelar</a>
+        
+                </form>
+            </div>
+            <h2>Codo a Codo 2023</h2>
+       </section>
+      </header>
+
+
+
+
+    
+
+    <script src="JS/script.js"> </script>
+    <script src="JS/modificaciones.js"> </script>
+</body>
+</html>
